@@ -8,8 +8,9 @@
     "build": "sass src/scss:dist/css",
     "start": "sass --watch src/scss:dist/css & live-server",
     "format": "prettier -w src/**/*.js",
-    "test": "npm run test-unit",
+    "test": "npm run test-unit && npm run test-e2e",
     "test-unit": "jest",
+    "test-e2e": "cypress open",
     "lint": "eslint src/**/*.js",
     "lint-fix": "eslint src/**/*.js --cache --fix",
     "prepare": "husky install"
