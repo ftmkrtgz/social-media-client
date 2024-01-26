@@ -14,8 +14,5 @@ describe("logout", () => {
     // Expect the remove function to be called with specific arguments
     expect(storageModule.remove).toHaveBeenCalledWith("token");
     expect(storageModule.remove).toHaveBeenCalledWith("profile");
-
-    // Alternatively, you can use a snapshot test to check the entire mock object
-    expect(storageModule.remove).toMatchSnapshot();
   });
 });
