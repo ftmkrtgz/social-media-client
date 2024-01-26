@@ -8,12 +8,13 @@
     "build": "sass src/scss:dist/css",
     "start": "sass --watch src/scss:dist/css & live-server",
     "format": "prettier -w src/**/*.js",
-    "test":""
+    "test": ""
   },
   "keywords": [],
   "author": "Noroff",
   "license": "ISC",
   "devDependencies": {
+    "eslint": "^8.56.0",
     "live-server": "^1.1.0",
     "prettier": "^3.2.4",
     "sass": "^1.54.8"
